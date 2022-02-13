@@ -11,7 +11,11 @@ var rotate = function(nums, k) {
     reverse(nums, 0, k - 1);
 };
 
+// the reverse function does the following
 let reverse = function(nums, start, end) {
+    //it enchanges the numbers between starting position to ending
+    // for example it exchanges arr[0]=arr[arr.length-1]
+    // this need to be written as start<end, when they are the same it stops exchanging
     while (start < end) {
         let temp = nums[start];
         nums[start] = nums[end];
